@@ -1,0 +1,12 @@
+/* stylebot */
+.updated {
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* якщо поле з коментом розтягнулось, змінюй значення 150px на зручне для тебе
+td.no-wrap.status {
+  max-width: 150px;  
+}
+*/
