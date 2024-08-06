@@ -297,10 +297,11 @@ markerProm
 
     function findEditButton() {
       let findEditButtonInt = setInterval(() => {
-        let editBnt = document.querySelectorAll("button.lgt-button-white");
-        if (editBnt[1] !== null) {
+        let findEditBtnBlock = document.querySelector("div.stops-wrapper");
+        let editBnt = findEditBtnBlock.querySelector("button.lgt-button-white");
+        if (editBnt !== null) {
           clearInterval(findEditButtonInt);
-          editBnt[1].addEventListener("click", findSaveButton);
+          editBnt.addEventListener("click", findSaveButton);
         }
       }, 500);
     }
